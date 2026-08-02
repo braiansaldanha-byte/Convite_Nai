@@ -1,0 +1,110 @@
+:root {
+  color-scheme: dark;
+  color: #ffffff;
+  background-color: #08070b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: radial-gradient(circle at top, #2b2237 0%, #0b0814 60%, #050307 100%);
+  color: #f5f5f5;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.intro-screen {
+  width: 100%;
+  max-width: 960px;
+}
+
+.intro-card {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 28px;
+  backdrop-filter: blur(14px);
+  background: rgba(14, 10, 22, 0.88);
+  box-shadow: 0 18px 80px rgba(0, 0, 0, 0.45);
+}
+
+.intro-card h1 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  line-height: 1.1;
+  margin: 0 0 1.8rem;
+  color: #ffffff;
+}
+
+.gif-wrap {
+  max-width: 420px;
+  margin: 0 auto;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.gif-wrap img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.continue-btn{
+  display:inline-flex;
+  margin:1.8rem auto 0;
+  padding:.95rem 1.8rem;
+  background: linear-gradient(135deg, #ff8cb0 0%, #ffb7d2 100%);
+  color:#fff;
+  text-decoration:none;
+  border-radius:999px;
+  font-weight:700;
+  box-shadow:0 14px 30px rgba(255, 140, 176, .22);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.continue-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 18px 38px rgba(255, 140, 176, .28);
+}
+
+@media (max-width: 640px) {
+  .intro-card {
+    padding: 1.8rem 1rem;
+  }
+  .intro-card h1 {
+    font-size: clamp(1.6rem, 6vw, 2.4rem);
+  }
+}
+
+body.fade-in {
+  opacity: 0;
+  animation: pageFadeIn .35s ease forwards;
+}
+
+body.fade-out {
+  opacity: 1;
+  animation: pageFadeOut .3s ease forwards;
+}
+
+@keyframes pageFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pageFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}

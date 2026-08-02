@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Uma novidade pra vocês 🎁</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Quicksand:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="sorriso.avif" type="image/avif">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="ambient" id="ambient"></div>
+
+<canvas id="confetti"></canvas>
+
+<section id="screen-cover">
+  <p class="eyebrow">Chegou o momento... Vem cá 👀</p>
+  <p class="cover-sub"><img src="funny.gif" alt=""></p>
+  <h1 class="cover-title">Quer saber o que tem dentro da caixa? 🎁</h1>
+
+  <div class="gift-wrap" id="giftBox" role="button" tabindex="0" aria-label="Toque na caixa para abrir o presente">
+    <div class="gift">
+      <div class="glow-burst"></div>
+      <div class="gift-box-body">
+        <div class="ribbon-v"></div>
+      </div>
+      <div class="gift-lid">
+        <div class="ribbon-h"></div>
+      </div>
+      <div class="bow"><span></span></div>
+    </div>
+  </div>
+
+  <p class="tap-hint">Toque na caixa pra descobrir ✨</p>
+</section>
+
+<div id="screen-reveal">
+
+  <section class="section presentation-stage" id="presentationStage">
+    <span class="hero-tag">Uma mini apresentação 💕</span>
+    <h3 class="section-title">Antes do convite, um pedacinho da nossa história</h3>
+    <p class="section-sub"></p>
+
+    <div class="presentation-grid" id="presentationGrid">
+      <article class="presentation-card">
+        <div class="presentation-photo">
+          <img src="teste.jpeg" alt="Foto da barriga">
+        </div>
+        <p class="presentation-cap">O começo, papai empolgado segurando o xixi da mamãe da Inaiê</p>
+      </article>
+      <article class="presentation-card">
+        <div class="presentation-photo">
+          <img src="eco1.jpeg" alt="Foto do teste">
+        </div>
+        <p class="presentation-cap">Primeira fotinho da Nai</p>
+      </article>
+      <article class="presentation-card">
+        <div class="presentation-photo">
+          <img src="barriga.jpeg" alt="Foto 1 do álbum">
+        </div>
+        <p class="presentation-cap">Cada vez maior na barriga da mamãe!</p>
+      </article>
+    </div>
+    <div class="presentation-nav">
+      <button id="presentationNextBtn" aria-label="Próxima imagem">↓</button>
+    </div>
+  </section>
+
+  <section class="section hero-reveal reveal-section">
+    <span class="hero-tag">Recado importante 💌</span>
+    <h2 class="hero-headline">Você está sendo convidado<span class="accent">(a)</span> para ser <span class="accent">dindo(a)</span> da nossa filha</h2>
+    <p class="hero-sub">E a gente não imagina ninguém melhor pra essa missão do que <span class="name-tag">você</span> 💛</p>
+
+    <div class="baby-card">
+      <div class="baby-emoji">
+        <img src="eco2.jpeg" alt="">
+      </div>
+      <p class="baby-name">🌸Inaiê🌸</p>
+      <p class="baby-meta">Chegando com muito amor para alegrar ainda mais a família</p>
+    </div>
+  </section>
+
+  <section class="section closing reveal-section">
+    <div class="divider"></div>
+    <p class="closing-note">Obrigado por fazer parte da nossa história, por torcer e amar a Inaiê com a gente. Aceita esse convite? </p>
+    <p class="closing-sign">Com carinho, os papais!!!</p>
+
+    <button class="replay-btn" id="replayBtn">🎉 Solte mais confete</button>
+  </section>
+
+  <footer>Feito com muito amor para a chegada da Inaiê 🌸</footer>
+</div>
+</body>
+</html>
