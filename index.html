@@ -1,22 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Começo</title>
-  <link rel="icon" href="sorriso.avif" type="image/avif">
-  <link rel="stylesheet" href="começo.css">
-  <script src="pageTransition.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f2ec">
+  <meta name="description" content="Uma pequena carta. Um amor imenso. Uma surpresa preparada com carinho para você.">
+  <meta property="og:title" content="Tem uma cartinha para você ♡">
+  <meta property="og:description" content="Reserve um instante. Preparamos uma surpresa com muito carinho.">
+  <title>Uma cartinha para você ♡</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <main class="intro-screen">
-    <div class="intro-card">
-      <h1>Você deve estar pensando, o que eles querem comigo?</h1>
-      <div class="gif-wrap">
-        <img src="Nazaré.gif" alt="Nazaré GIF" />
-      </div>
-      <a href="index2.html" class="continue-btn">Continuar</a>
+  <svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><symbol id="sprig" viewBox="0 0 160 230"><g fill="none" stroke="currentColor" stroke-width="1.3"><path d="M75 222C100 162 56 92 94 13M82 188Q30 165 24 130M80 163Q122 140 137 102M78 124Q37 106 35 70M82 87Q120 65 124 28"/><path d="M60 176Q20 182 24 130Q61 138 60 176ZM99 148Q94 107 137 102Q138 136 99 148ZM65 112Q28 112 35 70Q69 78 65 112ZM97 74Q91 36 124 28Q132 60 97 74ZM84 52Q63 29 94 13Q103 38 84 52Z" fill="currentColor" fill-opacity=".08"/></g></symbol></defs></svg>
+  <div class="page-grain" aria-hidden="true"></div>
+  <header class="masthead"><a class="wordmark" href="index.html" aria-label="Voltar ao início">uma história de amor<span>FEITA DE PEQUENOS GRANDES MOMENTOS</span></a><span class="header-note">para alguém especial <span aria-hidden="true">♡</span></span></header>
+  <main id="main">
+    <section id="cover" class="cover" aria-labelledby="cover-title">
+      <div class="cover-copy"><p class="eyebrow"><span></span> ENTREGUE COM CARINHO</p><h1 id="cover-title">Algumas pessoas<br>já moram no<br>nosso <em>coração.</em></h1><p class="lead">E você é uma delas.<br>Temos uma coisa linda para te contar.</p><a href="#story" class="button primary" id="open-letter">Abrir minha cartinha <span aria-hidden="true">↗</span></a><p class="small-note">Um minutinho seu. Uma lembrança para sempre.</p></div>
+      <div class="envelope-scene" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="scene-star star-one">✦</span><span class="scene-star star-two">✧</span><svg class="botanical botanical-left"><use href="#sprig"/></svg><svg class="botanical botanical-right"><use href="#sprig"/></svg><div class="envelope"><div class="letter-peek"><span>um pedacinho</span><strong>do nosso amor</strong><i>♡</i></div><div class="envelope-back"></div><div class="envelope-front"></div><div class="envelope-flap"></div><div class="wax-seal">♡</div><div class="envelope-address">especialmente para você</div></div><p class="scene-caption">tem amor aqui dentro.</p></div>
+      <div class="cover-bottom"><span>UM NOVO CAPÍTULO ESTÁ COMEÇANDO</span><span aria-hidden="true">01 — 03</span></div>
+    </section>
+    <div id="experience">
+      <nav class="chapter-nav" aria-label="Capítulos do convite"><a href="#story" class="active">01 <span>Nossa história</span></a><span class="nav-line"></span><a href="#invitation">02 <span>O convite</span></a><span class="nav-line"></span><a href="#answer">03 <span>Seu lugar aqui</span></a></nav>
+      <section id="story" class="story section" aria-labelledby="story-title">
+        <div class="story-copy"><p class="eyebrow">01 / ONDE TUDO COMEÇOU</p><h2 id="story-title" tabindex="-1">Antes de te conhecer,<br>eu já era muito <em>amada.</em></h2><p class="body-copy">Ainda estou aqui, no quentinho da barriga da mamãe. Mas, do lado de fora, a minha história já está cheia de amor.</p><p class="body-copy">Quer ver como tudo começou?</p><div class="memory-description" aria-live="polite" aria-atomic="true"><span id="memory-number" class="memory-number">01</span><div><h3 id="memory-title">A notícia mais linda</h3><p id="memory-copy">Um teste, o sorriso do papai e uma vida inteira de amor começando.</p></div></div><div class="gallery-controls"><button id="previous-memory" class="round-button" aria-label="Memória anterior" disabled>←</button><span id="memory-count" aria-live="off">01 / 03</span><button id="next-memory" class="round-button" aria-label="Próxima memória">→</button></div><a href="#invitation" class="text-link">Agora, tenho um pedido… <span aria-hidden="true">↓</span></a></div>
+        <div class="album" aria-label="Álbum de memórias" tabindex="0"><span class="tape" aria-hidden="true"></span><button class="photo-button" id="expand-photo" aria-label="Ampliar foto: A notícia mais linda"><img id="memory-photo" src="teste.jpeg" alt="Papai sorrindo e segurando o teste de gravidez" width="1200" height="1600" loading="lazy"><span class="zoom-label">Ampliar ↗</span></button><div class="photo-caption"><span id="photo-caption">O dia em que tudo mudou.</span><span aria-hidden="true">♡</span></div><div class="album-dots" aria-label="Escolher memória"><button class="selected" aria-label="Memória 1: A notícia mais linda" aria-pressed="true" data-memory="0"></button><button aria-label="Memória 2: Meu primeiro retratinho" aria-pressed="false" data-memory="1"></button><button aria-label="Memória 3: Meu primeiro lar" aria-pressed="false" data-memory="2"></button></div></div>
+      </section>
+      <section id="invitation" class="invitation section" aria-labelledby="invitation-title"><svg class="invitation-sprig" aria-hidden="true"><use href="#sprig"/></svg><p class="eyebrow">02 / UM PEDIDO PARA A VIDA TODA</p><span class="little-heart" aria-hidden="true">♡</span><p class="letter-greeting">Oi, sou a Inaiê.</p><h2 id="invitation-title">Meu mundo ainda é pequenininho.<br>Mas nele já existe<br><em>um lugar para você.</em></h2><p class="invitation-copy">Mamãe e papai escolheram alguém especial para caminhar comigo.<br>Para ser abraço, conselho, colo e um amor que fica.</p><div class="question-card"><span class="eyebrow">ELES ESCOLHERAM VOCÊ.</span><h3>Aceita ser meu<br><em>dindo ou minha dinda?</em></h3><p>Não só em um dia especial.<br>Em todos os capítulos da minha vida.</p><a class="button primary" href="#answer">Quero fazer parte dessa história <span aria-hidden="true">♡</span></a></div><p class="signature">Com amor, <strong>Inaiê</strong><span>e os papais, que já estão sorrindo por aqui.</span></p></section>
+      <section id="answer" class="answer section" aria-labelledby="answer-title"><div class="answer-art" aria-hidden="true"><div class="keepsake"><span>UM AMOR PARA A VIDA TODA</span><img src="eco2.jpeg" alt="" loading="lazy" width="376" height="349"><strong>Inaiê</strong><p>Tem um lugar no meu coração<br>que já é seu.</p><i>♡</i></div><svg><use href="#sprig"/></svg></div><div class="answer-copy"><p class="eyebrow">03 / SEU LUGAR NA MINHA HISTÓRIA</p><div id="before-yes"><h2 id="answer-title">Os melhores laços<br>são feitos de <em>amor.</em></h2><p class="body-copy">Obrigada por já fazer parte da nossa história.<br>Podemos contar com você na próxima?</p><button class="button primary" id="accept">Sim! Com todo o meu coração <span aria-hidden="true">♡</span></button><p class="small-note">Seu “sim” fica guardado neste dispositivo.</p></div><div id="after-yes" hidden><p class="success-label">♡ CONVITE ACEITO</p><h2 tabindex="-1" id="success-title">Agora, esse amor<br>tem um <em>novo laço.</em></h2><p class="body-copy">Inaiê ganhou mais um colo para chamar de lar.<br>Que sorte a nossa ter você por perto!</p><div class="answer-actions"><button class="button primary" id="download">Guardar esta lembrança <span aria-hidden="true">↓</span></button><button class="button secondary" id="share">Compartilhar meu “sim” <span aria-hidden="true">↗</span></button></div><p class="small-note">O aceite não é enviado automaticamente aos papais. Compartilhe a novidade com eles.</p><button id="celebrate" class="text-link">Mais um pouquinho de alegria ✧</button></div><p id="status" role="status" class="status"></p></div></section>
+      <footer class="footer"><span class="footer-heart" aria-hidden="true">♡</span><p>Ainda nem cheguei.<br><em>E já tenho tanto amor me esperando.</em></p><span>FEITO COM AMOR, PARA A CHEGADA DA INAIÊ</span><button id="restart" class="text-link">Rever a cartinha ↺</button></footer>
     </div>
   </main>
+  <dialog id="photo-dialog" aria-label="Foto ampliada"><button class="round-button close-dialog" aria-label="Fechar foto ampliada">×</button><img src="teste.jpeg" alt=""><p></p></dialog>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <noscript><p class="noscript-note">Esta cartinha pode ser lida sem JavaScript. Para percorrer o álbum e guardar seu aceite, ative o JavaScript no navegador.</p></noscript>
 </body>
 </html>
